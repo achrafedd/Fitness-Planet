@@ -1,0 +1,102 @@
+.app__header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.app__header .container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.app__header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.app__header-logo img {
+    width: 70px;
+    margin-right: 5px;
+}
+
+.app__header-navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.app__header-navbar ul li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    transition: all var(--transition) linear;
+    -webkit-transition: all var(--transition) linear;
+    -moz-transition: all var(--transition) linear;
+    -ms-transition: all var(--transition) linear;
+    -o-transition: all var(--transition) linear;
+}
+
+.app__header-navbar ul li a.active {
+    border-bottom: 2px solid var(--red);
+}
+
+.app__header-mobile-navbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .app__header .container {
+        justify-content: space-between;
+    }
+
+    .app__header-navbar {
+        display: none;
+    }
+
+    .app__header-mobile-navbar {
+        display: block;
+    }
+
+    .app__header-mobile-navbar svg {
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .app__header-mobile-navbar .icon {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: #fff;
+    }
+
+    .app__header-mobile-navbar ul {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--red);
+        position: absolute;
+        top: 0;
+        left: -200%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        transition: left var(--transition) linear;
+        -webkit-transition: left var(--transition) linear;
+        -moz-transition: left var(--transition) linear;
+        -ms-transition: left var(--transition) linear;
+        -o-transition: left var(--transition) linear;
+    }
+
+    .app__header-mobile-navbar ul.active {
+        left: 0;
+    }
+
+    .app__header-mobile-navbar ul li a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}

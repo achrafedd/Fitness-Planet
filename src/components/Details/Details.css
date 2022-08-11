@@ -1,0 +1,54 @@
+.app__details {
+    padding: var(--paddingY) 0;
+}
+
+.app__details .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.app__details .gif {
+    flex: 1;
+}
+
+.app__details .gif img {
+    width: 100%;
+}
+
+.app__details .info {
+    flex: 1;
+}
+
+.app__details .name {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.app__details .desc {
+    margin-bottom: 20px;
+}
+
+.app__details .body-part,
+.app__details .target,
+.app__details .equipment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.app__details .body-part img,
+.app__details .target img,
+.app__details .equipment img {
+    padding: 10px;
+    background-color: coral;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

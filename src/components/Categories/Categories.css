@@ -1,0 +1,128 @@
+.app__categories {
+    padding: var(--paddingY) 0;
+}
+
+.app__categories .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__categories-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.app__categories-search {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    min-width: 80%;
+    display: flex;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.app__categories-search input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+    outline: none;
+}
+
+.app__categories-search button {
+    background-color: var(--red);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.app__categories-slider {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.app__categories-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    gap: 30px;
+    transition: all var(--transition) linear;
+    -webkit-transition: all var(--transition) linear;
+    -moz-transition: all var(--transition) linear;
+    -ms-transition: all var(--transition) linear;
+    -o-transition: all var(--transition) linear;
+}
+
+.app__categories-item {
+    background-color: #fff;
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-top: 5px solid transparent;
+    justify-content: center;
+    transition: transform var(--transition) linear;
+    -webkit-transition: transform var(--transition) linear;
+    -moz-transition: transform var(--transition) linear;
+    -ms-transition: transform var(--transition) linear;
+    -o-transition: transform var(--transition) linear;
+}
+
+.app__categories-item.active {
+    border-top-color: var(--red);
+}
+
+.app__categories-item:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.app__categories-item .icon {
+    font-size: 40px;
+    color: var(--red);
+}
+
+.app__categories-item .name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.app__categories-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    align-self: flex-end;
+}
+
+.app__categories-btns .btn {
+    cursor: pointer;
+    color: var(--red);
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .app__categories-title {
+        font-size: 25px;
+    }
+}
